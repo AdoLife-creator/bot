@@ -1,0 +1,9 @@
+name: PvPToggle
+version: 1.0.0
+main: com.novanetwork.pvptoggle.PvPToggle
+api-version: '1.21'
+author: NovaNetwork
+commands:
+  pvp:
+    description: PvP durumunu ac veya kapat
+    usage: /pvp [on|off]
