@@ -1,0 +1,17 @@
+name: PvPToggle
+version: 1.0.0
+main: com.senin.pvptoggle.PvPTogglePlugin
+api-version: "1.21"
+description: Oyuncuların PvP'yi toggle etmesini sağlar.
+authors: [SenininAdın]
+
+commands:
+  pvp:
+    description: PvP modunu açar veya kapatır.
+    usage: /pvp
+    permission: pvptoggle.use
+
+permissions:
+  pvptoggle.use:
+    description: /pvp komutunu kullanma izni
+    default: true
