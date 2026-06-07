@@ -1,0 +1,5 @@
+messages:
+  pvp-enabled: "&aPvP açıldı! Dikkatli ol."
+  pvp-disabled: "&cPvP kapatıldı. Güvendesin."
+  pvp-blocked: "&cKarşı oyuncu PvP modunda değil!"
+  no-permission: "&cBu komutu kullanma yetkin yok."
