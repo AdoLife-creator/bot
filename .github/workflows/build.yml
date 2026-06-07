@@ -1,0 +1,31 @@
+name: Build PvPToggle Plugin
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodu çek
+        uses: actions/checkout@v4
+
+      - name: Java 21 kur
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Maven ile derle
+        run: mvn clean package -B
+
+      - name: JAR dosyasını artifact olarak yükle
+        uses: actions/upload-artifact@v4
+        with:
+          name: PvPToggle-jar
+          path: target/PvPToggle-*.jar
