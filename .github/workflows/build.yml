@@ -23,9 +23,10 @@ jobs:
 
       - name: Maven ile derle
         run: mvn clean package -B
+        working-directory: PvPToggle
 
       - name: JAR dosyasını artifact olarak yükle
         uses: actions/upload-artifact@v4
         with:
           name: PvPToggle-jar
-          path: target/PvPToggle-*.jar
+          path: PvPToggle/target/PvPToggle-*.jar
